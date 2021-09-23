@@ -82,15 +82,16 @@
                 height: 0;
                 left: 0;
                 opacity: 0;
-                margin:0;
+                margin: 0;
                 position: absolute;
                 transition: all .5s ease;
                 top: 70px;
                 width: auto;
+                filter: drop-shadow(30px 10px 4px #4444dd);
             }
 
 
-            .menu li:hover ul{
+            .menu li:hover ul, .menu li:active{
                 height: auto;
                 opacity: 1;
                 transform: translateY(0);
@@ -99,6 +100,7 @@
                 z-index: 2;
                 border-style: solid;
                 border-color: black;
+
             }
 
             .menu ul a {
@@ -147,7 +149,7 @@
                 font-weight: bold;
             }
 
-                .vertical-menu li:hover{
+                .vertical-menu li:hover, .vertical-menu li:active{
                     background-color: lawngreen;
                 }
 
