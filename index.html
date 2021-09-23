@@ -57,27 +57,26 @@
             margin: auto;
             position: relative;
             text-align: center;
-            width: 100%;
+            width: 99%;
             font-family: 'Noto Sans KR', sans-serif;
             font-size: 35px;
             font-weight: bold;
             color: #c70a0a;
-            border-style: solid;
-            border-color: #ffffff;
+           
         }
 
             .menu > li > a {
-                background: blue;
-                color: #fff;
+                background: #eee;
+                color: black;
                 display: block;
                 padding: 10px 20px;
-                margin: auto;
+                margin: 0;
                 text-align: center;
                 text-decoration: none;
             }
 
             .menu ul {
-                background: #ddd;
+                background: #FFE63D;
                 height: 0;
                 left: 0;
                 opacity: 0;
@@ -88,12 +87,15 @@
             }
 
             .menu li:hover ul {
+                display: block; /* Display the dropdown */
                 height: auto;
                 opacity: 1;
                 transform: translateY(0);
                 background-color: lawngreen;
                 position: absolute;
-        
+                z-index: 2;
+                border-style: solid;
+                border-color: black;
             }
 
             .menu ul a {
@@ -103,61 +105,179 @@
                 text-decoration: none;
 
             }
+
+        .vertical-menu {
+            
+            display: block;
+            margin: auto;
+            position: relative;
+            text-align: center;
+            width: 99%;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+            color: #c70a0a;
+            border-style: solid;
+            border-color: #ffffff;
+        }
+
+            .vertical-menu a {
+                background-color: #eee;
+                color: black;
+                display: block;
+                padding: 12px;
+                text-decoration: none;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .vertical-menu li {
+                background-color: lawngreen;
+            }
+
+            .vertical-menu a:hover {
+                background-color: lawngreen;
+            }
+
+                .vertical-menu a.active {
+                    background-color: #c70a0a;
+                    color: white;
+                }
     </style>
 </head>
 
-<body style='margin : 0px; overflow-y: auto;'>
+<body style='margin : 0px; overflow-y: auto; overflow-x:hidden'>
     <img src="img/2021Welcome.gif" style="width:60%;" class="center">
-   
 
 
+
+
+
+
+
+
+
+
+
+    <div class="vertical-menu">
+        <a href="#" class="active">1부/ 8:25-11:00 PM</a>
+        <a href="#" class="content">✨ 환영인사 ✨</a>
+        <a href="#" class="content">KGSA 소개</a>
         <ul class="menu">
             <li>
-                <a href="#">1부/ 6:00-8:10 PM</a>
+                <a href="#">KGSA 소모임 소개</a>
 
                 <ul>
-                    <li><a href="#" class="content">✨ 환영인사 ✨</a></li>
-                    <li><a href="#" class="content">KGSA 소개</a></li>
-                    <li><a href="#" class="content">현대자동차 소개</a></li>
-                    <li><a href="#" class="content">피아노 트리오 공연 </a></li>
-                    <li><a href="#" class="content">저녁식사</a></li>
-                    <li><a href="#" class="content">경품추첨</a></li>
+
+                    <li><a href="#" class="content">아웃도어</a></li>
+                    <li><a href="#" class="content">토담</a></li>
+                    <li><a href="#" class="content">퍼즐게임</a></li>
+                    <li><a href="#" class="content">농구</a></li>
+                    <li><a href="#" class="content">축구</a></li>
+                    <li><a href="#" class="content">배드민턴</a></li>
+                    <li><a href="#" class="content">테니스</a></li>
+                    <li><a href="#" class="content">세일링</a></li>
+                    <li><a href="#" class="content">과학기술과 기업투자가 만날때</a></li>
+
                 </ul>
             </li>
         </ul>
-
-   
-
-
         <ul class="menu">
             <li>
-                <a href="#">휴식/ 8:10-8:25 PM</a>
-
-               
-            </li>
-        </ul>
-
-
-
-
-    
-
-
-        <ul class="menu">
-            <li>
-                <a href="#">2부/ 8:25-11:00 PM</a>
+                <a href="#">현대자동차 소개</a>
 
                 <ul>
-                    <li><a href="#" class="content">Beer &amp; Wine Bar Open</a></li>
-                    <li><a href="#" class="content">KGSA 소개</a></li>
-                    <li><a href="#" class="content">현대자동차 소개</a></li>
-                    <li><a href="#" class="content">피아노 트리오 공연 </a></li>
-                    <li><a href="#" class="content">저녁식사</a></li>
-                    <li><a href="#" class="content">경품추첨</a></li>
+                    <li><a href="#" class="content">MAIN SPONSOR</a></li>
+
                 </ul>
             </li>
         </ul>
+        <ul class="menu">
+            <li>
+                <a href="#">포토부스 Open</a>
 
-   
+                <ul>
+                    <li><a href="#" class="content">#2021MITKGSA 인스타그램 포스트 해주신 분들 추첨, 상품 증정 이벤트!</a></li>
+
+                </ul>
+            </li>
+
+
+        </ul>
+        <ul class="menu">
+            <li>
+                <a href="#">피아노 트리오 라이브공연</a>
+
+                <ul>
+                    <li><a href="#" class="content">Berklee College of Music</a></li>
+
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <a href="#">저녁식사</a>
+
+        <a href="#">경품추첨</a>
+
+
+    </div>
+
+    <div class="vertical-menu">
+        <a href="#" class="active">휴식/ 8:10-8:25 PM</a>
+        <ul class="menu">
+            <li>
+                <a href="#">Beer &amp; Wine Bar Open</a>
+                <ul>
+                    <li><a href="#" class="content"> 카드/현금, ID 지참</a></li>
+
+                </ul>
+
+            </li>
+        </ul>
+       
+
+    </div>
+
+    <div class="vertical-menu">
+        <a href="#" class="active">2부/ 8:25-11:00 PM</a>
+        <ul>
+            <li>
+                <a href="#" class="content">이벤트 &amp; 게임</a>
+            </li>
+            <li>
+                <a href="#" class="content"> 게임상품 증정</a>
+            </li>
+            <ul class="menu">
+                <li>
+                    <a href="#" class="content">Beer &amp; Wine Bar Closes</a>
+                    <ul>
+                        <li><a href="#" class="content"> @ 10:30pm</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li>
+                    <a href="#" class="content">경품추첨</a>
+                    <ul>
+                        <li><a href="#" class="content">Nesspreso Coffee Machine</a></li>
+                        <li><a href="#" class="content">Airpod Pro</a></li>
+                        <li><a href="#" class="content">Galaxy Watch 4</a></li>
+                        <li><a href="#" class="content">iPad Air (4th)</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <li>
+                <a href="#" class="content">또 만나요!👋</a>
+            </li>
+
+
+        </ul>
+</div>
+
+
 </body>
 </html>
