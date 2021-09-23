@@ -2,8 +2,8 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-     <script>  document.body.addEventListener('touchstart', function () { }, false); </script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+          <script>  document.body.addEventListener('touchstart', function () { }, false); </script>
     <style type="text/css">
 
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
@@ -136,10 +136,17 @@
             }
 
             .vertical-menu li {
-                background-color: lawngreen;
+                background-color: #eee;
+                color: black;
+                display: block;
+                padding: 12px;
+                text-decoration: none;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 35px;
+                font-weight: bold;
             }
 
-            .vertical-menu a:hover {
+            .vertical-menu li:hover {
                 background-color: lawngreen;
             }
 
@@ -157,30 +164,30 @@
 
     <div class="vertical-menu">
         <a href="#" class="active">1부/ 8:25-11:00 PM</a>
-        <a href="#" class="content">✨ 환영인사 ✨</a>
-        <a href="#" class="content">KGSA 소개</a>
+        <li>✨ 환영인사 ✨</li>
+        <li>KGSA 소개</li>
         <ul class="menu">
             <li>
-                <a href="#">KGSA 소모임 소개</a>
+                KGSA 소모임 소개
 
                 <ul>
 
-                    <li><a href="#" class="content">아웃도어</a></li>
-                    <li><a href="#" class="content">토담</a></li>
-                    <li><a href="#" class="content">퍼즐게임</a></li>
-                    <li><a href="#" class="content">농구</a></li>
-                    <li><a href="#" class="content">축구</a></li>
-                    <li><a href="#" class="content">배드민턴</a></li>
-                    <li><a href="#" class="content">테니스</a></li>
-                    <li><a href="#" class="content">세일링</a></li>
-                    <li><a href="#" class="content">과학기술과 기업투자가 만날때</a></li>
+                    <li>> 아웃도어</li>
+                    <li>> 토담</li>
+                    <li>> 퍼즐게임</li>
+                    <li>> 농구</li>
+                    <li>> 축구</li>
+                    <li>> 배드민턴</li>
+                    <li>> 테니스</li>
+                    <li>> 세일링</li>
+                    <li>> 과학기술과 기업투자가 만날때</li>
 
                 </ul>
             </li>
         </ul>
         <ul class="menu">
             <li>
-                <a href="#">EVENT SPONSOR</a>
+                EVENT SPONSOR
 
                 <ul>
                     <li><a href="#" class="content">현대자동차</a></li>
@@ -190,7 +197,7 @@
         </ul>
         <ul class="menu">
             <li>
-                <a href="#">포토부스 Open</a>
+                포토부스 Open
 
                 <ul>
                     <li><a href="#" class="content">#2021MITKGSA 인스타그램 포스트 해주신 분들 추첨, 상품을 드립니다 😎</a></li>
